@@ -46,7 +46,7 @@ with st.sidebar:
     
     load_bootstrap()
 
-    image = Image.open('logo_cropify.png')
+    image = Image.open('logo.png')
 
     st.image(image, width=300)
     st.markdown("<h1 style='text-align: center;'>Crop Recommendation System using Random Forest Algorithm</h1>", unsafe_allow_html= True)
