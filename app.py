@@ -53,11 +53,10 @@ with st.sidebar:
     st.markdown("""
         <h4 style='text-align: left;'>
         This simple crop recommender system was trained using Random Forest Algorithm in giving
-        recommendations to farmers the best and suitable crop based on an Indian Crop 
-        Recommendation <a style='text-align: center; color: blue;' 
+        recommendations to farmers the best and suitable crop based on an opensource <a style='text-align: center; color: blue;' 
         href="https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset">Dataset</a>.
-        By inputing N, P, K, and pH values based on soil conditions, 
-        weather conditions such as temperature, humidity, and rainfall, and regional location, the system can
+        By inputing ratio of Nitrogen content in soil (N), ratio of Phosphorous content in soil (P), ratio of Potassium content in soil (K), and pH values based on soil conditions, 
+        weather conditions such as temperature, humidity, and rainfall in mm, and regional location, the system can
         recommend what the best and most suitable crop to plant.
         </h4>
         """, unsafe_allow_html=True)
@@ -77,9 +76,9 @@ st.markdown("<h3 style='text-align: center;'>Please input the feature values to 
 col1, col2, col3, col4, col5, col6, col7 = st.columns([1,1,4,1,4,1,1], gap = 'medium')
 
 with col3:
-    n_input = st.number_input('Insert N (kg/ha) value:', min_value= 0, max_value= 140, help = 'Insert here the Nitrogen density (kg/ha) from 0 to 140.')
-    p_input = st.number_input('Insert P (kg/ha) value:', min_value= 5, max_value= 145, help = 'Insert here the Phosphorus density (kg/ha) from 5 to 145.')
-    k_input = st.number_input('Insert K (kg/ha) value:', min_value= 5, max_value= 205, help = 'Insert here the Potassium density (kg/ha) from 5 to 205.')
+    n_input = st.number_input('Insert Nitrogen Content in Soil (kg/ha) value:', min_value= 0, max_value= 140, help = 'Insert here the Nitrogen density (kg/ha) from 0 to 140.')
+    p_input = st.number_input('Insert Phospherous content in soil (kg/ha) value:', min_value= 5, max_value= 145, help = 'Insert here the Phosphorus density (kg/ha) from 5 to 145.')
+    k_input = st.number_input('Insert Potassium content in soil (kg/ha) value:', min_value= 5, max_value= 205, help = 'Insert here the Potassium density (kg/ha) from 5 to 205.')
     temp_input = st.number_input('Insert Avg Temperature (ºC) value:', min_value= 9., max_value= 43., step = 1., format="%.2f", help = 'Insert here the Avg Temperature (ºC) from 9 to 43.')
 
 with col5:
