@@ -1,5 +1,3 @@
-[![DOI](https://zenodo.org/badge/636972288.svg)](https://zenodo.org/badge/latestdoi/636972288)
-
 <img src="https://github.com/maayeesha/Green-Lead-Project/blob/main/logo.png">
 
 ## Crop Recommendation System
