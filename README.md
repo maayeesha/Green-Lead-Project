@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <img src="https://github.com/maayeesha/Green-Lead-Project/blob/main/logo.png">
 
 ## Crop Recommendation System
